@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="kitchensink">
+<head>
+    <title>Go Dojo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Disable phone number detection on iOS.  -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" />
+    <link rel="stylesheet" href="css/screen.css" type="text/css" />
+
+    <!-- Load jQuery -->
+    <script src="js/libs/jquery-2.0.3.js"></script>
+    <!-- Load Bootstrap JS components -->
+    <script src="js/libs/bootstrap.js"></script>
+
+    <!-- Load angularjs -->
+    <script src="js/libs/angular.js"></script>
+    <!-- Load angularjs-route, which allows us to use multiple views displayed through application routes -->
+    <script src="js/libs/angular-route.js"></script>
+    <!-- Load angularjs-resource, which allows us to interact with REST resources as high level services -->
+    <script src="js/libs/angular-resource.js"></script>
+    
+    <!-- Load the controllers for our app -->
+    <script src="js/controllers.js"></script>
+    
+    <!-- Load the application wide JS, such as route definitions -->
+    <script src="js/app.js"></script>
+    
+    <!-- Load the services we have defined for the application, particularly the REST services -->
+    <script src="js/services.js"></script>
+    
+</head>
+<body>
+    <section id="container" class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <!-- <div class="dualbrand img-responsive pull-right">
+                <img src="gfx/rhjb_eap_logo.png" />
+            </div> -->
+            <h1>Bem-vindo ao Go Dojo!</h1>
+
+            <p>Você está no sistema de cadastro de participantes do Go Dojo.</p>
+        </div>
+        <div id="content" class="col-xs-12 col-sm-12 col-md-12" ng-view>
+            <!-- This div will be templated by AngularJS -->
+            [Template content will be inserted here]
+        </div>
+        <!-- <aside id="aside" class="col-xs-12 col-sm-12 col-md-4">
+            <div class="row">
+                <p>Learn more about JBoss Enterprise Application
+                    Platform 6.</p>
+                <ul>
+                    <li><a href="https://access.redhat.com/site/documentation/JBoss_Enterprise_Application_Platform/">Documentation</a></li>
+                    <li><a href="http://red.ht/jbeap-6">Product Information</a></li>
+                </ul>
+            </div>
+        </aside> -->
+        <footer id="footer">
+            <p>
+                This project was generated from a Maven archetype from JBoss.<br />
+            </p>
+        </footer>
+    </section>
+</body>
+</html>
